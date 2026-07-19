@@ -74,5 +74,5 @@ def upload_file():
         img = os.path.join(app.config['UPLOAD'], weed)
         return render_template('prediction.html', img=img, con=con, discription=discription, effects=effects)
     return render_template('prediction.html')
-if __name__ == '__main__':
-    app.run(port=5000, debug=True)
+if __name__ == "__main__":
+    app.run()
